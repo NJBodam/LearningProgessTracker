@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 class ListOperations {
     public static void transferAllElements(LinkedList<String> linkedList, ArrayList<String> arrayList) {
@@ -12,6 +10,19 @@ class ListOperations {
             arrayList.set(count, linkedList.removeFirst());
             count++;
         }
+    }
+
+    public static void main(String[] args) {
+
+
+        Map<Integer, String> characters = new HashMap<>();
+
+        characters.put(1000, "Cinderella");
+        characters.put(2000, "Prince");
+        characters.put(3000, "Evil stepmother");
+
+        System.out.println(characters);
+
     }
 
 }
